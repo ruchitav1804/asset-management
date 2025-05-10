@@ -1,0 +1,48 @@
+.major-form-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: #0000001a 0px 0px 10px;
+  }
+  
+  .major-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .major-form-container input[type="text"] {
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .major-form-container .button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Adjust the gap between buttons */
+  }
+  
+  .major-form-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%; /* Ensures buttons are side by side */
+  }
+  
+  .major-form-container button[type="submit"] {
+    background-color: #0045ff;
+    color: white;
+    width: 125px;
+  }
+  
+  .major-form-container button:last-child {
+    color: white;
+    width: 125px;
+  }
+
+  

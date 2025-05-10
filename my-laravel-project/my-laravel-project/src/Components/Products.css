@@ -1,0 +1,320 @@
+/* Main Container */
+.product-container {
+  background: white;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 77rem;
+  overflow-x: visible; /* allow inner scrolling */
+}
+
+/* Header & Controls */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-header h2 {
+  color: #333;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow items to wrap if necessary */
+}
+
+.search-input,
+.category-select,
+.date-range,
+.clear-filters {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-bar input {
+  width: 92%!important;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #d32f2f;
+}
+
+/* Start Date & End Date - Same Row */
+.date-range {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.date-range input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.date-range label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.date-range div {
+  flex: 1;
+}
+
+/* Add Product Button */
+.add-product-btn {
+  background-color: #0a2c51;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+}
+
+button.download-csv-btn {
+  background-color: #0a2c51;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  margin-right: 10px;
+}
+
+.add-product-btn:hover {
+  background-color: #0a2c51;
+}
+
+/* Scrollable Table Container */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: white;
+  padding-bottom: 10px;
+}
+
+/* Product Table */
+.product-table {
+  width: 100%;
+  min-width: 1200px; /* Enables scroll if needed */
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Table Headers */
+.product-table th {
+  color: #000;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap; /* Keeps headers on one line */
+  background: #f7f7f7;
+}
+
+/* Table Cells */
+.product-table th, 
+.product-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+/* Sticky Action Column */
+.product-table th:last-child, 
+.product-table td:last-child {
+  position: sticky;
+  right: 0;
+  background: white;
+  z-index: 2;
+  border-left: 2px solid #ddd;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.action-buttons .view {
+  color: #28a745;
+}
+
+.action-buttons .edit {
+  color: #007bff;
+}
+
+.action-buttons .delete {
+  color: #dc3545;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: none;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 3px;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Filter + Search Styles */
+.search-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-container input,
+.search-container button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.clear-filters-btn {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+  background-color: #ff4d4d;
+}
+
+.date-filter {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.date-filter label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input[type="text"]{
+  padding:8px;
+  width: 385px;
+  margin-top:3px;
+}
+
+input[type="date"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 162px;
+}
+
+button.download-pdf-btn {
+  background: #2196f3;
+  color: white;
+}
+
+/* Optional: Scrollbar Styling */
+.table-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.edit-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.qr-btn {
+  background-color: #388e3c;
+  color: white;
+}
+
+textarea {
+  resize: vertical;
+  height: 60px;
+  width: 273px;
+}
+
+@media(min-width:1024px) and (max-width: 1440px) {
+  .product-container{
+    width: 61rem;
+  }
+}

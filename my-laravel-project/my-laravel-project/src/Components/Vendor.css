@@ -1,0 +1,83 @@
+/* Vendors.css */
+.vendors-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .vendors-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .vendors-header button {
+    background-color: #0a2c51;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container label {
+    margin-right: 8px;
+    margin-top: 12px;
+  }
+  
+  .search-container input {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc; /* Border for the search input */
+    border-radius: 4px; /* Rounded corners for the search input */
+  }
+  
+  .vendors-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000; /* Border around the table */
+  }
+  
+  .vendors-table th, .vendors-table td {
+    padding: 10px;
+    border: 1px solid #000000; /* Border around each table cell */
+  }
+  
+  .vendors-table thead {
+    background-color: #f2f2f2;
+  }
+  
+  .vendors-table td {
+    text-align: center;
+  }
+  
+  .vendors-actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+  }
+  
+  .no-vendors {
+    text-align: center;
+  }
+  

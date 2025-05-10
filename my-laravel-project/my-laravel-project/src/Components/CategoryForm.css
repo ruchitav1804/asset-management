@@ -1,0 +1,52 @@
+.category-form-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  }
+
+  h2{
+    text-align:left;
+  }
+  
+  .category-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .category-form-container input[type="text"] {
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .category-form-container .button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Adjust the gap to your preference */
+  }
+  
+  .category-form-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%; /* Ensures buttons are side by side */
+  }
+  
+  .category-form-container button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    width: 125px;
+  }
+  
+  .category-form-container button:last-child {
+    color: white;
+    width: 125px;
+  }
+  
+  

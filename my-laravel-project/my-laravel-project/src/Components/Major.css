@@ -1,0 +1,98 @@
+.major-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  }
+  
+  .major-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .add-btn {
+    background-color: rgb(10, 44, 81);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .add-btn:hover {
+    background-color: #0a2c51;
+  }
+  
+  .search-bar {
+    margin-bottom: 15px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .major-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .major-table th,
+  .major-table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .major-table th {
+    background-color: rgb(242, 242, 242);
+    font-weight: bold;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0069d9;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 600px) {
+    .major-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  }
+  

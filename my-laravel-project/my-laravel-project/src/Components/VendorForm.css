@@ -1,0 +1,102 @@
+/* Wrapper for the entire form */
+.vendor-form-container {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styles */
+  .vendor-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 60px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #0045ff;
+    color: white;
+  }
+  
+  button[type="button"] {
+    background-color: #aaa;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Form Actions section */
+  .form-actions {
+    grid-column: span 3;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .form-actions input[type="text"] {
+    padding: 8px;
+    width: 368px;
+    margin-top: 3px;
+}
+  
+  /* Responsive Design: Switch to 2 columns for medium screens */
+  @media (max-width: 1024px) {
+    .vendor-form {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .form-actions {
+      grid-column: span 2;
+    }
+  }
+  
+  /* Responsive Design: Switch to 1 column for small screens */
+  @media (max-width: 768px) {
+    .vendor-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-actions {
+      grid-column: span 1;
+    }
+  }
+  

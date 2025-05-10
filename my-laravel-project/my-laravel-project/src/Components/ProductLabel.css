@@ -1,0 +1,20 @@
+.product-label {
+    padding: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .label-box {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border: 2px solid #444;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  

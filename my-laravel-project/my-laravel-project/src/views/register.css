@@ -1,0 +1,159 @@
+/* Full Screen Setup */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .register-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+  }
+  
+  .register-card {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+  }
+  
+  /* Left Section */
+  .register-left {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .register-left h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .register-left h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .register-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s;
+  }
+  
+  .buttons button:hover {
+    background: #2563eb;
+  }
+  
+  /* Right Section */
+  .register-right {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .register-right h2 {
+    color: #1d4ed8;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .register-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-right input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+  }
+  
+  .register-right input:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .register-right button {
+    width: 100%;
+    background-color: #1d4ed8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .register-right button:hover {
+    background-color: #2563eb;
+  }
+  
+  .register-right .message {
+    text-align: center;
+    margin-top: 10px;
+    color: #6b7280;
+  }
+  
+  .register-right .message a {
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  .register-right .message a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 992px) {
+    .register-card {
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    .register-left,
+    .register-right {
+      width: 100%;
+      height: 50vh;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .register-left h1 {
+      font-size: 28px;
+    }
+  
+    .register-right h2 {
+      font-size: 28px;
+    }
+  }
+  
